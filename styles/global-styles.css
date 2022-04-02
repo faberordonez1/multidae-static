@@ -1,5 +1,6 @@
 /* Global */
 /* ------------------------------------------------- */
+
 html{
 	font-family: sans-serif, tahoma, verdana, serif;
 }
@@ -618,3 +619,12 @@ div.database-warning-message{
 div.lab-links{
 	text-align: center;
 }
+/* mis css personalisados */
+
+/*
+.fondoAmarillo{
+	background: yellow;
+}
+td{
+	background: red;
+}*/
