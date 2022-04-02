@@ -2,43 +2,42 @@
 	<head>
 		<link
 			rel="shortcut icon"
-			href="src/images/favicon.ico"
+			href="../src/images/favicon.ico"
 			type="image/x-icon"
 		/>
 
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/styles/global-styles.css"
+			href="../src/styles/global-styles.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/styles/ddsmoothmenu/ddsmoothmenu.css"
+			href="../src/styles/ddsmoothmenu/ddsmoothmenu.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="javascript/jQuery/colorbox/colorbox.css"
+			href="../src/javascript/jQuery/colorbox/colorbox.css"
 		/>
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="src/styles/gritter/jquery.gritter.css"
+			href="../src/styles/gritter/jquery.gritter.css"
 		/>
 
-		<script src="javascript/jQuery/jquery.js"></script>
-		<script src="javascript/jQuery/colorbox/jquery.colorbox-min.js"></script>
-		<script src="javascript/ddsmoothmenu/ddsmoothmenu.js"></script>
-		<script src="javascript/gritter/jquery.gritter.min.js"></script>
-		<script src="javascript/hints/hints-menu.js"></script>
-		<script src="javascript/inline-initializers/jquery-init.js"></script>
-		<script src="javascript/inline-initializers/ddsmoothmenu-init.js"></script>
-		<script src="javascript/inline-initializers/populate-web-storage.js"></script>
-		<script src="javascript/inline-initializers/gritter-init.js"></script>
-		<script src="javascript/inline-initializers/hints-menu-init.js"></script>
+		<script src="../src/javascript/jQuery/jquery.js"></script>
+		<script src="../src/javascript/jQuery/colorbox/jquery.colorbox-min.js"></script>
+		<script src="../src/javascript/ddsmoothmenu/ddsmoothmenu.js"></script>
+		<script src="../src/javascript/gritter/jquery.gritter.min.js"></script>
+		<script src="../src/javascript/hints/hints-menu.js"></script>
+		<script src="../src/javascript/inline-initializers/jquery-init.js"></script>
+		<script src="../src/javascript/inline-initializers/ddsmoothmenu-init.js"></script>
+		<script src="../src/javascript/inline-initializers/populate-web-storage.js"></script>
+		<script src="../src/javascript/inline-initializers/gritter-init.js"></script>
+		<script src="../src/javascript/inline-initializers/hints-menu-init.js"></script>
 	</head>
-
 	<body>
 		<table class="main-table-frame">
 			<tbody>
@@ -48,7 +47,7 @@
 						colspan="2"
 					>
 						<img
-							src="src/images/coykillericon-50-38.png"
+							src="../src/images/coykillericon-50-38.png"
 						/>
 						OWASP Mutillidae II: Keep Calm
 						and Pwn On
@@ -61,11 +60,10 @@
 					>
 						Version: 2.8.78
 						<span
-							>Security Level: 1
-							(Client-Side
-							Security)</span
+							>Security Level: 5
+							(Secure)</span
 						>
-						<span>Hints: Enabled</span>
+						<span>Hints: Disabled</span>
 						<span>Not Logged In</span>
 					</td>
 				</tr>
@@ -74,20 +72,24 @@
 						class="main-table-frame-menu-bar"
 						colspan="2"
 					>
-						<a href="index.html">Home</a>
+						<a
+							href="index.php?page=home.php&amp;popUpNotificationCode=HPH0"
+							>Home</a
+						>
 						|
-						<a href="pages/login.html"
+						<a
+							href="index.php?page=login.php"
 							>Login/Register</a
 						>
 						|
 						<a
-							href="pages/inlogin.html"
+							href="index.php?do=toggle-security&amp;page=documentation/usage-instructions.php"
 							>Toggle Security</a
 						>
 						|
 						<a
-							href="index.php?do=toggle-enforce-ssl&amp;page=/opt/lampp/htdocs/mutillidae-master/home.php"
-							>Enforce TLS</a
+							href="index.php?do=toggle-enforce-ssl&amp;page=documentation/usage-instructions.php"
+							>Drop TLS</a
 						>
 						|
 						<a href="set-up-database.php"
@@ -124,7 +126,7 @@
 										"
 										>OWASP
 										2017<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -156,7 +158,7 @@
 												-
 												Injection
 												(SQL)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -188,7 +190,7 @@
 														-
 														Extract
 														Data<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -230,7 +232,7 @@
 														-
 														Bypass
 														Authentication<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -270,7 +272,7 @@
 														-
 														Insert
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -327,7 +329,7 @@
 														SQL
 														via
 														Timing<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -373,7 +375,7 @@
 														href=""
 														>SQLMAP
 														Practice<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -438,7 +440,7 @@
 														Object
 														Notation
 														(JSON)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -491,7 +493,7 @@
 														SOAP
 														Web
 														Service<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -532,7 +534,7 @@
 														REST
 														Web
 														Service<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -576,7 +578,7 @@
 												-
 												Injection
 												(Other)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -607,7 +609,7 @@
 														>Application
 														Log
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -721,7 +723,7 @@
 														href=""
 														>Buffer
 														Overflow<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -760,7 +762,7 @@
 														>Cascading
 														Style
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -807,7 +809,7 @@
 														href=""
 														>Command
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -880,7 +882,7 @@
 														>Frame
 														Source
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -928,7 +930,7 @@
 														>HTML
 														Injection
 														(HTMLi)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1131,7 +1133,7 @@
 														via
 														HTTP
 														Headers<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1198,7 +1200,7 @@
 														Via
 														DOM
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1247,7 +1249,7 @@
 														Via
 														Cookie
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1288,7 +1290,7 @@
 														>HTTP
 														Parameter
 														Pollution<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1334,7 +1336,7 @@
 														href=""
 														>JavaScript
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1391,7 +1393,7 @@
 														Notation
 														(JSON)
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1442,7 +1444,7 @@
 														href=""
 														>LDAP
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1482,7 +1484,7 @@
 														href=""
 														>Parameter
 														Addition<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1530,7 +1532,7 @@
 														External
 														Entity
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1570,7 +1572,7 @@
 														>XML
 														Entity
 														Expansion<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1609,7 +1611,7 @@
 														href=""
 														>XML
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1648,7 +1650,7 @@
 														href=""
 														>XPath
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1697,7 +1699,7 @@
 												Session
 												Management
 												<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -1727,7 +1729,7 @@
 														href=""
 														>Authentication
 														Bypass<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1790,7 +1792,7 @@
 														href=""
 														>Priviliege
 														Escalation<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1851,7 +1853,7 @@
 														href=""
 														>Username
 														Enumeration<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1920,7 +1922,7 @@
 														Web
 														Token
 														(JWT)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -1965,7 +1967,7 @@
 												Sensitive
 												Data
 												Exposure<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -1995,7 +1997,7 @@
 														href=""
 														>Information
 														Disclosure<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2108,7 +2110,7 @@
 														>Application
 														Path
 														Disclosure<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2155,7 +2157,7 @@
 														>Platform
 														Path
 														Disclosure<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2204,7 +2206,7 @@
 														Web
 														Token
 														(JWT)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2249,7 +2251,7 @@
 												XML
 												External
 												Entities<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -2281,7 +2283,7 @@
 														External
 														Entity
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2325,7 +2327,7 @@
 												Broken
 												Access
 												Control<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -2357,7 +2359,7 @@
 														Direct
 														Object
 														References<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2437,7 +2439,7 @@
 														Level
 														Access
 														Control<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2502,7 +2504,7 @@
 														Web
 														Token
 														(JWT)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2544,7 +2546,7 @@
 														Resource
 														Sharing
 														(CORS)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2588,7 +2590,7 @@
 												-
 												Security
 												Misconfiguration<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -2620,7 +2622,7 @@
 														Resource
 														Sharing
 														(CORS)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2670,7 +2672,7 @@
 														(GET
 														for
 														POST)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2765,7 +2767,7 @@
 														href=""
 														>HTTP
 														Headers<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -2869,7 +2871,7 @@
 												Site
 												Scripting
 												(XSS)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -2900,7 +2902,7 @@
 														>Reflected
 														(First
 														Order)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3094,7 +3096,7 @@
 														>Persistent
 														(Second
 														Order)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3165,7 +3167,7 @@
 													<a
 														href=""
 														>DOM-Based<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3216,7 +3218,7 @@
 														Request
 														Forgery
 														(CSRF)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3272,7 +3274,7 @@
 														>Via
 														"Input"
 														(GET/POST)<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3416,7 +3418,7 @@
 														>Via
 														HTTP
 														Headers<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3480,7 +3482,7 @@
 														>Via
 														HTTP
 														Attribute<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3519,7 +3521,7 @@
 														href=""
 														>Via
 														Misconfiguration<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3561,7 +3563,7 @@
 														HTML5
 														Web
 														Storage<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3601,7 +3603,7 @@
 														href=""
 														>Against
 														JSON<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3643,7 +3645,7 @@
 														>Via
 														Cookie
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3684,7 +3686,7 @@
 														>Via
 														XML
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3724,7 +3726,7 @@
 														>Via
 														XPath
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3768,7 +3770,7 @@
 														Style
 														Sheet
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -3809,7 +3811,7 @@
 														>BeeF
 														Framework
 														Targets<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -4012,7 +4014,7 @@
 												with
 												Known
 												Vulnerabilities<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4084,7 +4086,7 @@
 										"
 										>OWASP
 										2013<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -4119,7 +4121,7 @@
 												Request
 												Forgery
 												(CSRF)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4178,7 +4180,7 @@
 												Redirects
 												and
 												Forwards<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4234,7 +4236,7 @@
 										"
 										>OWASP
 										2010<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -4267,7 +4269,7 @@
 												Insecure
 												Cryptographic
 												Storage<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4336,7 +4338,7 @@
 												Restrict
 												URL
 												Access<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4417,7 +4419,7 @@
 												Transport
 												Layer
 												Protection<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4485,7 +4487,7 @@
 										"
 										>OWASP
 										2007<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -4518,7 +4520,7 @@
 												Malicious
 												File
 												Execution<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4567,7 +4569,7 @@
 												-
 												Information
 												Leakage<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4675,7 +4677,7 @@
 												Improper
 												Error
 												Handling<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4779,7 +4781,7 @@
 										"
 										>Web
 										Services<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -4808,7 +4810,7 @@
 											<a
 												href=""
 												>SOAP<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -4838,7 +4840,7 @@
 														href=""
 														>Test
 														Page<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -4877,7 +4879,7 @@
 														href=""
 														>Command
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -4916,7 +4918,7 @@
 														href=""
 														>SQL
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -4955,7 +4957,7 @@
 														href=""
 														>Username
 														Enumeration<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -4995,7 +4997,7 @@
 											<a
 												href=""
 												>REST<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5025,7 +5027,7 @@
 														href=""
 														>SQL
 														Injection<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -5065,7 +5067,7 @@
 														href=""
 														>Username
 														Enumeration<img
-															src="src/images/right.gif"
+															src="../src/images/right.gif"
 															class="rightarrowclass"
 															style="
 																border: 0;
@@ -5111,7 +5113,7 @@
 											padding-right: 23px;
 										"
 										>Others<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -5143,7 +5145,7 @@
 												Resource
 												Sharing
 												(CORS)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5184,7 +5186,7 @@
 												>Client-side
 												"Security"
 												Controls<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5224,7 +5226,7 @@
 												href=""
 												>Cross-Site
 												Framing<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5270,7 +5272,7 @@
 											<a
 												href=""
 												>Tab-Nabbing<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5310,7 +5312,7 @@
 												>Unrestricted
 												File
 												Upload<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5350,7 +5352,7 @@
 												>Denial
 												of
 												Service<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5400,7 +5402,7 @@
 												>JavaScript
 												Validation
 												Bypass<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5515,7 +5517,7 @@
 												>Data
 												Capture
 												Pages<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5564,7 +5566,7 @@
 												Web
 												Token
 												(JWT)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5608,7 +5610,7 @@
 											padding-right: 23px;
 										"
 										>Labs<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -5640,7 +5642,7 @@
 												the
 												Web
 												Works<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5734,7 +5736,7 @@
 												href=""
 												>SQL
 												Injection<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5834,7 +5836,7 @@
 												href=""
 												>Command
 												Injection<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5937,7 +5939,7 @@
 												Protocol
 												(LDAP)
 												Injection<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -5986,7 +5988,7 @@
 												Object
 												Referece
 												(IDOR)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6088,7 +6090,7 @@
 												href=""
 												>Open
 												Redirect<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6147,7 +6149,7 @@
 												>Cross-site
 												Scripting
 												(XSS)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6232,7 +6234,7 @@
 												Request
 												Forgery
 												(CSRF)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6287,7 +6289,7 @@
 												>HTML5
 												Web
 												Storage<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6332,7 +6334,7 @@
 												href=""
 												>Session
 												Management<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6427,7 +6429,7 @@
 												href=""
 												>Cookie
 												Management<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6479,7 +6481,7 @@
 												href=""
 												>Password
 												Management<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6541,7 +6543,7 @@
 												href=""
 												>Input
 												Validation<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6593,7 +6595,7 @@
 												href=""
 												>Error
 												Handling<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6668,7 +6670,7 @@
 											<a
 												href=""
 												>Logging<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6720,7 +6722,7 @@
 												href=""
 												>Server
 												Configuration<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6788,7 +6790,7 @@
 												Security
 												Policy
 												(CSP)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6859,7 +6861,7 @@
 												Token
 												(JWT)
 												Security<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6937,7 +6939,7 @@
 												Resource
 												Sharing
 												(CORS)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -6994,7 +6996,7 @@
 												Composition
 												Analysis
 												(SCA)<img
-													src="src/images/right.gif"
+													src="../src/images/right.gif"
 													class="rightarrowclass"
 													style="
 														border: 0;
@@ -7050,7 +7052,7 @@
 											padding-right: 23px;
 										"
 										>Documentation<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -7139,7 +7141,7 @@
 											padding-right: 23px;
 										"
 										>Resources<img
-											src="src/images/right.gif"
+											src="../src/images/right.gif"
 											class="rightarrowclass"
 											style="
 												border: 0;
@@ -7238,7 +7240,7 @@
 							>
 								<img
 									alt="Webpwnized YouTube Channel"
-									src="src/images/youtube-play-icon-40-40.png"
+									src="../src/images/youtube-play-icon-40-40.png"
 								/>
 								<br />
 								Video Tutorials
@@ -7252,7 +7254,7 @@
 							>
 								<img
 									alt="Webpwnized Twitter Channel"
-									src="src/images/twitter-bird-48-48.png"
+									src="../src/images/twitter-bird-48-48.png"
 								/>
 								<br />
 								Announcements
@@ -7267,7 +7269,7 @@
 							>
 								<img
 									alt="Webpwnized Twitter Channel"
-									src="src/images/pdf-icon-48-48.png"
+									src="../src/images/pdf-icon-48-48.png"
 									align="middle"
 								/>
 								<br />
@@ -7278,338 +7280,802 @@
 					</td>
 					<td class="main-table-frame-right">
 						<!-- Begin Content -->
-						<style>
-							a {
-								font-weight: bold;
-							}
-						</style>
 
-						<div
-							style="
-								width: 750px;
-								overflow: hidden;
-							"
-						>
-							<div
-								class="hint-wrapper-header"
-								id="idHintWrapperHeader"
-								title="Click to open this section"
-								style="
-									display: block;
-									background-color: rgb(
-										255,
-										255,
-										255
-									);
-									color: rgb(
-										0,
-										0,
-										0
-									);
-								"
-								;=""
-							>
-								<img
-									id="idHintWrapperHeaderImage"
-									style="
-										padding-right: 5px;
-									"
-									alt="Expand Hints"
-									src="src/images/down_arrow_16_16.png"
-									align="left"
-								/>
-								Hints and Videos
-							</div>
-							<div
-								id="idHintWrapperBody"
-								class="hint-wrapper-body"
-								style="
-									display: none;
-								"
-							>
-								<table
-									class="hint-table"
-								>
-									<tbody>
-										<tr
-											class="hint-header"
-											id="idNoHintFoundHintHeader"
-											title="Click to open this section"
-											onclick="toggleBody(this, window.document.getElementById('idNoHintFoundHintBody'), window.document.getElementById('idNoHintFoundHintHeaderImage'));"
-											onmouseover="this.style.backgroundColor='#cccccc';this.style.color='#ffffff';"
-											onmouseout="this.style.backgroundColor='#FFFFFF';this.style.color='#000000';"
-										>
-											<td>
-												<img
-													id="idNoHintFoundHintHeaderImage"
-													style="
-														padding-right: 5px;
-													"
-													alt="Expand No Hints Found"
-													src="src/images/down_arrow_16_16.png"
-													align="left"
-												/>
-												No
-												Hints
-												Found
-											</td>
-										</tr>
-										<tr
-											id="idNoHintFoundHintBody"
-											style="
-												display: none;
-											"
-										>
-											<td
-												class="hint-body"
-											>
-												<br />
-												<span
-													class="report-header"
-													>Sorry.
-													No
-													hints
-													found
-													for
-													this
-													page</span
-												>
-												<br /><br />
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<span
-								style="
-									float: right;
-								"
-							>
-								<img
-									src="images/arrow-45-degree-left-up.png"
-									style="
-										margin-right: 5px;
-									"
-								/>
-								<span
-									class="label"
-									style="
-										float: right;
-									"
-									>TIP:&nbsp;
-									<span
-										style="
-											float: right;
-											text-align: center;
-										"
-										>Click
-										<span
-											style="
-												color: blue;
-												font-style: italic;
-											"
-											>Hint
-											and
-											Videos</span
-										><br />on
-										each
-										page</span
-									></span
-								>
-							</span>
+						<div class="page-title">
+							Usage Instructions
 						</div>
 
-						<table
-							style="
-								margin: 0px;
-								margin-top: 5px;
-							"
-						>
+						<div style="margin: 5px">
+							<span
+								style="
+									font-weight: bold;
+									margin-right: 50px;
+								"
+							>
+								<a
+									id="back-button-anchor"
+								>
+									<img
+										src="../src/images/back-button-64-64.png"
+										alt="Go Back"
+										align="middle"
+									/>
+									&nbsp;
+									Back
+								</a>
+							</span>
+							<span
+								style="
+									white-space: nowrap;
+									font-weight: bold;
+								"
+								title="Click here to see the primary goal of this page. (Additional vulnerabilities will exist on a page)"
+							>
+								<a
+									href="./includes/pop-up-help-context-generator.php?pagename=documentation/usage-instructions.php"
+									class="colorbox cboxElement"
+									title="Help me with page documentation/usage-instructions.php"
+									style="
+										color: #000000;
+									"
+								>
+									<img
+										alt="Help Me!"
+										src="../src/images/help-easy-button-48-48.png"
+										align="middle"
+									/>
+									Help Me!
+								</a>
+							</span>
+						</div>
+						<script nonce="">
+							document.addEventListener(
+								"DOMContentLoaded",
+								function () {
+									document.getElementById(
+										"back-button-anchor"
+									).addEventListener(
+										"click",
+										function () {
+											document.location.href =
+												"index.php\x3Fpage\x3Dhome.php";
+										}
+									);
+								}
+							);
+						</script>
+						<table>
 							<tbody>
 								<tr>
 									<td
-										class="fondoAmarillo"
+										style="
+											width: 800px;
+										"
 									>
+										Mutillidae
+										implements
+										vulnerabilities
+										from
+										the
 										<a
-											title="Usage Instructions"
-											href=" pages/instruccion.html"
+											href="http://www.owasp.org/index.php/OWASP_Top_Ten_Project"
+											target="_blank"
+											>OWASP
+											Top
+											10</a
 										>
-											<img
-												alt="What Should I Do?"
-												src="src/images/question-mark-40-61.png"
-												align="middle"
-											/>
-											What
-											Should
-											I
-											Do?
-										</a>
-									</td>
-									<td>
+										2013,
+										2010
+										and
+										2007
+										in
+										PHP.
+										Additionally
+										vulnerabilities
+										from
+										the
+										SANS
+										Top
+										25
+										Programming
+										Errors
+										and
+										select
+										information
+										disclosure
+										vulnerabilities
+										have
+										been
+										added
+										on
+										various
+										pages.
+										<br /><br /><br />
 										<span
-											style="
-												white-space: nowrap;
-												font-weight: bold;
-											"
-											title="Click here to see the primary goal of this page. (Additional vulnerabilities will exist on a page)"
+											class="report-header"
+											>Optional
+											Configuration</span
 										>
-											<a
-												href="./includes/pop-up-help-context-generator.php?pagename=/opt/lampp/htdocs/mutillidae-master/home.php"
-												class="colorbox cboxElement"
-												title="Help me with page /opt/lampp/htdocs/mutillidae-master/home.php"
+										<br /><br />
+										Instructional
+										videos
+										are
+										available
+										to
+										help
+										set
+										up
+										an
+										HTTPS
+										TLS
+										certificate
+										or
+										Apache
+										virtual
+										hosts
+										<br />
+										<br /><a
+											href="https://www.youtube.com/watch?v=sJd0ir9-jSc"
+											target="_blank"
+											><img
 												style="
-													color: #000000;
+													margin-right: 5px;
 												"
-											>
-												<img
-													alt="Help Me!"
-													src="src/images/help-easy-button-48-48.png"
-													align="middle"
-												/>
-												Help
-												Me!
-											</a>
-										</span>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a
-											href="./index.php?page=./documentation/vulnerabilities.php"
+												src="../src/images/youtube-play-icon-40-40.png"
+												alt="YouTube"
+											/><span
+												class="label"
+												>How
+												to
+												Create
+												Self-Signed
+												Certificate
+												in
+												Apache</span
+											></a
 										>
-											<img
-												alt="Help"
-												src="src/images/siren-48-48.png"
-												align="middle"
-											/>
-											Listing
+										<br /><a
+											href="https://www.youtube.com/watch?v=79mOiU3GfnQ"
+											target="_blank"
+											><img
+												style="
+													margin-right: 5px;
+												"
+												src="../src/images/youtube-play-icon-40-40.png"
+												alt="YouTube"
+											/><span
+												class="label"
+												>How
+												to
+												Create
+												Virtual
+												Hosts
+												in
+												Apache</span
+											></a
+										>
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Top
+											Menu
+											Bar</span
+										>
+										<br /><br />
+										<span
+											class="label"
+											>Home:</span
+										>
+										Takes
+										user
+										to
+										Home
+										page<br />
+										<span
+											class="label"
+											>Login/Register:</span
+										>
+										Takes
+										user
+										to
+										Login
+										page<br />
+										<span
+											class="label"
+											>Toggle
+											Hints:</span
+										>
+										Shows
+										or
+										hides
+										the
+										Hints
+										on
+										vulnerable
+										pages<br />
+										<span
+											class="label"
+											>Toggle
+											Security:</span
+										>
+										Changes
+										the
+										security
+										level
+										between
+										insecure,
+										client-side
+										security
+										and
+										secure<br />
+										<span
+											class="label"
+											>Enforce
+											TLS:</span
+										>
+										When
+										enforced,
+										Mutillidae
+										automatically
+										redirects
+										all
+										HTTP
+										requests
+										to
+										HTTPS<br />
+										<span
+											class="label"
+											>Reset
+											DB:</span
+										>
+										Drops
+										and
+										rebuilds
+										all
+										database
+										tables
+										and
+										resets
+										the
+										project<br />
+										<span
+											class="label"
+											>View
+											Log:</span
+										>
+										Takes
+										the
+										user
+										to
+										view
+										the
+										log<br />
+										<span
+											class="label"
+											>View
+											Captured
+											Data:</span
+										>
+										Takes
+										the
+										user
+										to
+										the
+										view
+										the
+										captured
+										data<br />
+										<br /><br />
+										<span
+											class="report-header"
+											>Left
+											Menu
+											Bar</span
+										>
+										<br /><br />
+										The
+										menu
+										on
+										the
+										left
+										is
+										organized
+										by
+										category
+										then
+										vulnerability.
+										Some
+										vulnerabilities
+										will
+										be
+										in
+										more
+										than
+										one
+										category
+										as
+										there
+										is
+										overlap
+										between
+										categories.
+										Each
+										page
+										in
+										Mutillidae
+										will
+										expose
+										multiple
+										vulnerabilities.
+										Some
+										pages
+										have
+										half
+										a
+										dozen
+										and/or
+										multiple
+										critical
+										vulnerabilities
+										on
+										the
+										same
+										page.
+										The
+										page
+										will
+										appear
+										in
+										the
+										menu
+										under
+										each
+										vulnerability.
+										<br /><br />
+										A
+										<a
+											title="Listing of vulnerabilities"
+											href="./index.php?page=./documentation/vulnerabilities.php"
+											>listing
 											of
-											vulnerabilities
-										</a>
-									</td>
-									<td>
+											vulnerabilities</a
+										>
+										is
+										available
+										in
+										menu
+										under
+										documentation
+										or
+										by
+										clicking
+										<a
+											title="Listing of vulnerabilities"
+											href="./index.php?page=./documentation/vulnerabilities.php"
+											>here</a
+										>.
+										<br /><br /><br />
+										<span
+											id="videos"
+											class="report-header"
+											>Videos</span
+										>
+										<br /><br />
+										The
+										videos
+										on
+										the
+										Webpwnized
+										YouTube
+										Channel
+										are
+										likely
+										to
+										be
+										a
+										some
+										assistance.
+										Videos
+										cover
+										installation,
+										using
+										tools
+										like
+										Burp-Suite
+										and
+										exploits
+										for
+										various
+										vulnerabilities.
+										<br /><br />
 										<a
 											href="http://www.youtube.com/user/webpwnized"
 											target="_blank"
 										>
 											<img
 												alt="Webpwnized YouTube Channel"
-												src="src/images/youtube-play-icon-40-40.png"
+												src="../src/images/youtube-play-icon-40-40.png"
 												align="middle"
 											/>
 											Video
 											Tutorials
 										</a>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td>
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Page
+											Hints</span
+										>
+										<br /><br />
+										Besides
+										the
+										menus,
+										this
+										will
+										be
+										the
+										most
+										important
+										feature
+										for
+										newcomers.
+										To
+										enable
+										hints,
+										toggle
+										the
+										"Show
+										Hints"
+										button
+										(top
+										menu
+										bar).
+										A
+										hints
+										section
+										will
+										appear
+										IF
+										the
+										page
+										contains
+										vulnerabilities.
+										The
+										Hints
+										are
+										"smart"
+										showing
+										only
+										those
+										hints
+										that
+										will
+										help
+										on
+										the
+										particular
+										page.
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Security
+											Modes</span
+										>
+										<br /><br />
+										Mutillidae
+										currently
+										has
+										three
+										modes:
+										completely
+										insecure,
+										client-side
+										security
+										and
+										secure.
+										In
+										insecure
+										and
+										client-side
+										mode,
+										the
+										pages
+										are
+										vulnerable
+										to
+										at
+										least
+										the
+										topic
+										they
+										fall
+										under
+										in
+										the
+										menu.
+										Note
+										that
+										client-side
+										security
+										mode
+										is
+										just
+										as
+										vulnerable
+										as
+										insecure
+										mode,
+										but
+										JavaScript
+										validation
+										or
+										HTML
+										controls
+										make
+										exploits
+										somewhat
+										more
+										difficult.
+										<br /><br />
+										In
+										secure
+										mode,
+										Mutillidae
+										attempts
+										to
+										protect
+										the
+										pages
+										with
+										server
+										side
+										scripts.
+										Also,
+										hints
+										are
+										disabled.
+										<br /><br />
+										The
+										mode
+										can
+										be
+										changed
+										using
+										the
+										"Toggle
+										Security"
+										button
+										on
+										the
+										top
+										menu
+										bar.
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>"Help
+											Me"
+											Button</span
+										>
+										<br /><br />
+										The
+										"Help
+										Me"
+										button
+										provides
+										a
+										basic
+										description
+										of
+										the
+										vulnerabilities
+										on
+										the
+										page
+										for
+										which
+										the
+										user
+										should
+										try
+										exploits.
+										Use
+										this
+										button
+										to
+										get
+										a
+										quick
+										list
+										of
+										issues.
+										Use
+										the
+										Hints
+										to
+										see
+										more
+										details.
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Just
+											give
+											me
+											the
+											exploit</span
+										>
+										<br /><br />
+										Hints
+										will
+										typically
+										provide
+										some
+										exploits.
+										Known
+										exploits
+										that
+										are
+										used
+										in
+										testing
+										Mutillidae
+										are
+										located
+										in
+										/documentation/mutillidae-test-scripts.txt.
+										There
+										is
+										some
+										documentation
+										for
+										each
+										exploit
+										which
+										explains
+										usage
+										and
+										location.
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Be
+											Careful</span
+										>
+										<br /><br />
+										Mutillidae
+										is
+										a
+										"live"
+										system.
+										The
+										vulnerabilities
+										are
+										real
+										rather
+										than
+										emulated.
+										This
+										eliminates
+										the
+										frustration
+										of
+										having
+										to
+										"know
+										what
+										the
+										author
+										wants".
+										Because
+										of
+										this,
+										there
+										are
+										likely
+										undocumented
+										vulnerabilities.
+										Also,
+										this
+										project
+										endangers
+										any
+										machine
+										on
+										which
+										it
+										runs.
+										Best
+										practice
+										is
+										to
+										run
+										Mutillidae
+										in
+										a
+										virtual
+										machine
+										isolated
+										from
+										the
+										network
+										which
+										is
+										only
+										booted
+										when
+										using
+										Mutillidae.
+										Every
+										effort
+										has
+										been
+										made
+										to
+										make
+										Mutillidae
+										ables
+										run
+										entirely
+										off-line.
+										<br /><br /><br />
+										<span
+											class="report-header"
+											>Whitepaper</span
+										>
+										<br /><br />
+										A
+										project
+										whitepaper
+										is
+										available
+										to
+										explain
+										the
+										features
+										of
+										Mutillidae
+										and
+										suggested
+										use-cases.
+										<br /><br />
 										<a
-											href="https://twitter.com/webpwnized"
+											href="https://www.sans.org/reading-room/whitepapers/application/introduction-owasp-mutillidae-ii-web-pen-test-training-environment-34380"
 											target="_blank"
+											title="Whitepaper: Introduction to OWASP Mutillidae II Web Pen Test Training Environment"
 										>
 											<img
 												alt="Webpwnized Twitter Channel"
-												src="src/images/twitter-bird-48-48.png"
+												src="../src/images/pdf-icon-48-48.png"
 												align="middle"
 											/>
-											Release
-											Announcements
-										</a>
-									</td>
-									<td
-										class="label"
-										title="Latest Version"
-									>
-										<img
-											alt="Latest Version"
-											src="src/images/installation-icon-48-48.png"
-											align="middle"
-										/>
-										<a
-											title="Latest Version"
-											href="https://github.com/webpwnized/mutillidae"
-											target="_blank"
-											>Latest
-											Version</a
-										>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										&nbsp;
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<a
-											href="documentation/mutillidae-test-scripts.txt"
-											target="_blank"
-										>
-											<img
-												alt="Helpful hints and scripts"
-												src="src/images/help-icon-48-48.png"
-												align="middle"
-											/>
-											Helpful
-											hints
-											and
-											scripts
-										</a>
-									</td>
-									<td
-										class="label"
-										title="Mutillidae LDIF File"
-									>
-										<a
-											href="configuration/openldap/mutillidae.ldif"
-											target="_blank"
-										>
-											<img
-												alt="Mutillidae LDIF File"
-												src="src/images/ldap-server-48-59.png"
-												align="middle"
-											/>
+											Introduction
+											to
+											OWASP
 											Mutillidae
-											LDIF
-											File
+											II
+											Web
+											Pen
+											Test
+											Training
+											Environment
 										</a>
 									</td>
 								</tr>
 							</tbody>
 						</table>
-
-						<!-- I think the database password is set to blank or perhaps samurai.
-			It depends on whether you installed this web app from irongeeks site or
-			are using it inside Kevin Johnsons Samurai web testing framework.
-			It is ok to put the password in HTML comments because no user will ever see
-			this comment. I remember that security instructor saying we should use the
-			framework comment symbols (ASP.NET, JAVA, PHP, Etc.)
-			rather than HTML comments, but we all know those
-			security instructors are just making all this up. -->
 						<!-- End Content -->
 					</td>
 				</tr>
-
 				<tr class="main-table-frame-dark">
 					<td colspan="2">
-						Browser: Mozilla/5.0 (X11;
-						Ubuntu; Linux x86_64; rv:98.0)
-						Gecko/20100101 Firefox/98.0
+						Browser:
+						䵯穩汬愯㔮〠⡘ㄱ㬠啢畮瑵㬠䱩湵砠砸㙟㘴㬠牶㨹㠮〩⁇散歯⼲〱〰㄰ㄠ䙩牥景砯㤸⸰
 						<br />
-						PHP Version: 8.1.4
+						PHP Version: Not Available
+						(Secure mode doesn't reveal the
+						server version)
 					</td>
-					<div></div>
 				</tr>
 			</tbody>
 		</table>
