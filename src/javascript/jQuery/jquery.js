@@ -11,6 +11,7 @@
  *
  * Date: Tue Nov 13 2012 08:20:33 GMT-0500 (Eastern Standard Time)
  */
+
 (function( window, undefined ) {
 var
 	// A central reference to the root jQuery(document)
@@ -91,7 +92,6 @@ var
 
 	// [[Class]] -> type pairs
 	class2type = {};
-
 jQuery.fn = jQuery.prototype = {
 	constructor: jQuery,
 	init: function( selector, context, rootjQuery ) {
@@ -6322,6 +6322,18 @@ jQuery.extend({
 					tag = ( rtagName.exec( elem ) || ["", ""] )[1].toLowerCase();
 					wrap = wrapMap[ tag ] || wrapMap._default;
 					depth = wrap[0];
+
+					//Remplaza rutas relativas de acuerdo al
+					if(elem.includes('../images')){
+						debugger
+						var rutaAbsoluta = self.location.href;   
+						var posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
+						var rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
+						
+						rutaRelativa === 'index.html' ?
+					    elem = elem.replace('../images','src/images'):
+						elem = elem.replace('../images','../src/images');
+				}
 					div.innerHTML = wrap[1] + elem + wrap[2];
 
 					// Move to the right depth
