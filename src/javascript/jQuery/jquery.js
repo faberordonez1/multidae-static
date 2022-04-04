@@ -6325,7 +6325,6 @@ jQuery.extend({
 
 					//Remplaza rutas relativas de acuerdo al
 					if(elem.includes('../images')){
-						debugger
 						var rutaAbsoluta = self.location.href;   
 						var posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
 						var rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
