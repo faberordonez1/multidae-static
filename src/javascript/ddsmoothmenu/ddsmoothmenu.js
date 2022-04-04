@@ -18,7 +18,7 @@
 var ddsmoothmenu={
 
 //Specify full URL to down and right arrow images (23 is padding-right added to top level LIs with drop downs):
-arrowimages: {down:['downarrowclass', './images/down.gif', 23], right:['rightarrowclass', './images/right.gif']},
+arrowimages: {down:['downarrowclass', '../images/down.gif', 23], right:['rightarrowclass', '../images/right.gif']},
 transition: {overtime:10, outtime:100}, //duration of slide in/ out animation, in milliseconds
 shadow: {enable:true, offsetx:5, offsety:5}, //enable shadow?
 showhidedelay: {showdelay: 10, hidedelay: 20}, //set delay in milliseconds before sub menus appear and disappear, respectively
