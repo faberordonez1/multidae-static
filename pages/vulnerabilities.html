@@ -1,0 +1,2401 @@
+<html>
+
+<head>
+	<link rel="shortcut icon" href="./../src/images/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="../src/styles/global-styles.css" />
+	<link rel="stylesheet" type="text/css" href="../src/styles/ddsmoothmenu/ddsmoothmenu.css" />
+	<link rel="stylesheet" type="text/css" href="../src/javascript/jQuery/colorbox/colorbox.css" />
+	<link rel="stylesheet" type="text/css" href="../src/styles/gritter/jquery.gritter.css" />
+
+	<script src="javascript/jQuery/jquery.js"></script>
+	<script src="javascript/jQuery/colorbox/jquery.colorbox-min.js"></script>
+	<script src="javascript/ddsmoothmenu/ddsmoothmenu.js"></script>
+	<script src="javascript/gritter/jquery.gritter.min.js"></script>
+	<script src="javascript/hints/hints-menu.js"></script>
+	<script src="javascript/inline-initializers/jquery-init.js"></script>
+	<script src="javascript/inline-initializers/ddsmoothmenu-init.js"></script>
+	<script src="javascript/inline-initializers/populate-web-storage.js"></script>
+	<script src="javascript/inline-initializers/gritter-init.js"></script>
+	<script src="javascript/inline-initializers/hints-menu-init.js"></script>
+</head>
+
+<body>
+	<table class="main-table-frame">
+		<tbody>
+			<tr class="main-table-frame-dark">
+				<td class="main-table-frame-first-bar" colspan="2">
+					<img src="../src/images/coykillericon-50-38.png">
+					OWASP Mutillidae II: Keep Calm and Pwn On
+				</td>
+			</tr>
+			<tr class="main-table-frame-dark">
+				<td class="main-table-frame-second-bar" colspan="2">
+					Version: 2.8.78 <span>Security Level: 0 (Hosed)</span>
+					<span>Hints: Enabled</span>
+					<span>Not Logged In</span>
+				</td>
+			</tr>
+			<tr class="main-table-frame-menu-bar">
+				<td class="main-table-frame-menu-bar" colspan="2">
+					<a href="../index.html">Home</a>
+					|
+					<a href="login.html">Login/Register</a> |
+					<a href="login.html">Toggle Hints</a> | <a href="login.html">Toggle Security</a>
+
+					| <a href="vulnerabilities.html">Toggle
+						Security</a>
+					|
+					<a href="vulnerabilities.html">Enforce
+						TLS</a>
+					|
+					<a href="set-up-database.html">Reset DB</a>
+					|
+					<a href="show-log.html">View Log</a>
+					|
+					<a href="captured-data.html">View Captured Data</a>
+				</td>
+			</tr>
+			<tr>
+				<td class="main-table-frame-left">
+
+					<div id="smoothmenu1" class="ddsmoothmenu">
+						<ul>
+							<li style="z-index: 1000;">
+								<a href="" style="padding-right: 23px;">OWASP 2017<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 999;">
+										<a href="">A1 - Injection (SQL)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 998;">
+												<a href="">SQLi - Extract Data<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 997;">
+												<a href="">SQLi - Bypass Authentication<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=login.php">Login</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 996;">
+												<a href="">SQLi - Insert Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="?page=add-to-your-blog.php">Add to your blog</a></li>
+													<li><a href="index.php?page=register.php">Register</a></li>
+													<li><a href="index.php?page=captured-data.php">View Captured
+															Data</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 995;">
+												<a href="">Blind SQL via Timing<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 994;">
+												<a href="">SQLMAP Practice<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=sqlmap-targets.php">SQLMAP Practice
+															Targets</a></li>
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=view-someones-blog.php">View Someones
+															Blog</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 993;">
+												<a href="">Via JavaScript Object Notation (JSON)<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test
+															Tool Lookup (AJAX)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 992;">
+												<a href="">Via SOAP Web Service<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/soap/ws-user-account.php">Lookup User</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 991;">
+												<a href="">Via REST Web Service<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/rest/ws-user-account.php">User Account
+															Management</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 990;">
+										<a href="">A1 - Injection (Other)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 989;">
+												<a href="">Application Log Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a href="index.php?page=source-viewer.php">Source Viewer</a>
+													</li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 988;">
+												<a href="">Buffer Overflow<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=repeater.php">Repeater</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 987;">
+												<a href="">Cascading Style Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=set-background-color.php">Set Background
+															Color</a></li>
+												</ul>
+											</li>
+											<li>
+												<a
+													href="index.php?page=view-user-privilege-level.php&amp;iv=6bc24fc1ab650b25b4114e93a98f1eba">CBC-bit
+													Flipping</a>
+											</li>
+											<li style="z-index: 986;">
+												<a href="">Command Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="./webservices/soap/ws-lookup-dns-record.php">DNS Lookup
+															(SOAP Web Service)</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 985;">
+												<a href="">Frame Source Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+													<li><a
+															href="index.php?page=styling-frame.php&amp;page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae">Styling
+															with Mutilidae</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 984;">
+												<a href="">HTML Injection (HTMLi)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+													<li><a href="index.php?page=set-background-color.php">Set Background
+															Color</a></li>
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+													<li><a href="index.php?page=captured-data.php">View Captured
+															Data</a></li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+													<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary
+															File Inclusion</a></li>
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=back-button-discussion.php">Those "Back"
+															Buttons</a></li>
+													<li><a
+															href="index.php?page=styling-frame.php&amp;page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae">Styling
+															with Mutilidae</a></li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 983;">
+												<a href="">HTMLi via HTTP Headers<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=back-button-discussion.php">Those "Back"
+															Buttons</a></li>
+													<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
+													<li><a href="index.php?page=site-footer-xss-discussion.php">Site
+															Footer</a></li>
+													<li>
+													</li>
+													<li><a href="">HTTP Response Splitting (Hint: Difficult)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 982;">
+												<a href="">HTMLi Via DOM Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 981;">
+												<a href="">HTMLi Via Cookie Injection<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 980;">
+												<a href="">HTTP Parameter Pollution<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 979;">
+												<a href="">JavaScript Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=back-button-discussion.php">Those "Back"
+															Buttons</a></li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+													<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 978;">
+												<a href="">JavaScript Object Notation (JSON) Injection<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test
+															Tool Lookup (AJAX)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 977;">
+												<a href="">LDAP Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=conference-room-lookup.php">Conference
+															Room Lookup</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 976;">
+												<a href="">Parameter Addition<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=repeater.php">Repeater</a></li>
+													<li><a
+															href="index.php?page=view-user-privilege-level.php&amp;iv=6bc24fc1ab650b25b4114e93a98f1eba">View
+															User Privileges</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 975;">
+												<a href="">XML External Entity Injection<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 974;">
+												<a href="">XML Entity Expansion<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 973;">
+												<a href="">XML Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 972;">
+												<a href="">XPath Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 971;">
+										<a href="">
+											A2 - Broken Authentication and Session Management
+											<img src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 970;"><a href="">Authentication Bypass<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=login.php">Via Brute Force</a></li>
+													<li><a href="index.php?page=privilege-escalation.php">Via
+															Cookies</a></li>
+													<li><a href="index.php?page=login.php">Via SQL Injection</a></li>
+													<li><a href="index.php?page=edit-account-profile.php">Via Account
+															Hijacking</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 969;"><a href="">Priviliege Escalation<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=privilege-escalation.php">Via
+															Cookies</a></li>
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=edit-account-profile.php">Via Account
+															Hijacking</a></li>
+													<li><a
+															href="index.php?page=view-user-privilege-level.php&amp;iv=6bc24fc1ab650b25b4114e93a98f1eba">Via
+															CBC-bit Flipping</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 968;"><a href="">Username Enumeration<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=login.php">Login</a></li>
+													<li><a href="index.php?page=edit-account-profile.php">Edit User
+															Profile</a></li>
+													<li><a href="./webservices/soap/ws-user-account.php">Lookup User
+															(SOAP Web Service)</a></li>
+													<li><a href="./webservices/rest/ws-user-account.php">User Account
+															Management (REST Web Service)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 967;">
+												<a href="">JSON Web Token (JWT)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=jwt.php">Current User Information</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 966;">
+										<a href="">A3 - Sensitive Data Exposure<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 965;">
+												<a href="">Information Disclosure<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=edit-account-profile.php">Edit User
+															Profile</a></li>
+													<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+													<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+													<li><a href="index.php?page=secret-administrative-pages.php">"Secret"
+															Administrative Pages</a></li>
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a href="index.php?page=client-side-comments.php">HTML/JavaScript
+															Comments</a></li>
+													<li><a href="index.php?page=cache-control.php">Cache-Control</a>
+													</li>
+													<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+													<li><a href="framer.html">Cross-Site Framing</a></li>
+													<li><a href="index.php?page=framing.php">X-Frame-Options
+															(Click-Jacking)</a></li>
+													<li><a href="framer.html">X-Frame-Options (Cross-frame
+															Scripting)</a></li>
+												</ul>
+											</li>
+
+											<li style="z-index: 964;">
+												<a href="">Application Path Disclosure<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+													<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 963;">
+												<a href="">Platform Path Disclosure<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+												</ul>
+											</li>
+											<li><a href="index.php?page=ssl-misconfiguration.php">SSL
+													Misconfiguration</a></li>
+											<li style="z-index: 962;">
+												<a href="">JSON Web Token (JWT)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=jwt.php">Current User Information</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 961;">
+										<a href="">A4 - XML External Entities<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 960;">
+												<a href="">XML External Entity Injection<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 959;">
+										<a href="">A5 - Broken Access Control<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 958;">
+												<a href="">Insecure Direct Object References<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=edit-account-profile.php">Via Account
+															Hijacking</a></li>
+													<li><a href="index.php?page=arbitrary-file-inclusion.php">Local File
+															Inclusion</a></li>
+													<li><a href="index.php?page=arbitrary-file-inclusion.php">Remote
+															File Inclusion</a></li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+													<li><a href="index.php?page=source-viewer.php">Source Viewer</a>
+													</li>
+													<li><a href="index.php?page=credits.php">Credits</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 957;">
+												<a href="">Missing Function Level Access Control<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=privilege-escalation.php">Cookies as
+															Auth Tokens</a></li>
+													<li><a href="index.php?page=secret-administrative-pages.php">"Secret"
+															Administrative Pages</a></li>
+													<li><a href="index.php?page=client-side-control-challenge.php">Client-side
+															Control Challenge</a></li>
+													<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 956;">
+												<a href="">JSON Web Token (JWT)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=jwt.php">Current User Information</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 955;">
+												<a href="">Cross-origin Resource Sharing (CORS)<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 954;">
+										<a href="">A6 - Security Misconfiguration<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 953;">
+												<a href="">Cross-origin Resource Sharing (CORS)<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+												</ul>
+											</li>
+											<li><a href="index.php?page=directory-browsing.php">Directory Browsing</a>
+											</li>
+											<li style="z-index: 952;">
+												<a href="">Method Tampering (GET for POST)<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+												</ul>
+											</li>
+
+											<li style="z-index: 951;">
+												<a href="">HTTP Headers<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=cors.php">Cross-Origin Resource Sharing
+															(CORS)</a></li>
+													<li><a href="index.php?page=cache-control.php">Cache-Control</a>
+													</li>
+													<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+													<li><a href="framer.html">Cross-Site Framing (Third-Party
+															Framing)</a></li>
+												</ul>
+											</li>
+											<li><a href="index.php?page=user-agent-impersonation.php">User-Agent
+													Impersonation</a></li>
+											<li><a href="index.php?page=upload-file.php">Unrestricted File Upload</a>
+											</li>
+											<li><a href="index.php?page=ssl-misconfiguration.php">SSL
+													Misconfiguration</a></li>
+											<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+											<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 950;">
+										<a href="">A7 - Cross Site Scripting (XSS)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 949;">
+												<a href="">Reflected (First Order)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+													<li><a href="index.php?page=set-background-color.php">Set Background
+															Color</a></li>
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+													<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary
+															File Inclusion</a></li>
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
+													<li><a href="index.php?page=back-button-discussion.php">Those "Back"
+															Buttons</a></li>
+													<li><a
+															href="index.php?page=styling-frame.php&amp;page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae">Styling
+															with Mutilidae</a></li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+													<li><a href="index.php?page=client-side-control-challenge.php">Client-side
+															Control Challenge</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 948;">
+												<a href="">Persistent (Second Order)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=view-someones-blog.php">View someone's
+															blog</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a href="index.php?page=edit-account-profile.php">Edit User
+															Profile</a></li>
+													<li><a href="index.php?page=show-log.html">Show Log</a></li>
+													<li>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 947;">
+												<a href="">DOM-Based<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 946;">
+												<a href="" target="_blank">Cross Site Request Forgery (CSRF)<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 945;">
+												<a href="">Via "Input" (GET/POST)<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=view-someones-blog.php">View someone's
+															blog</a></li>
+													<li><a href="index.php?page=show-log.html">Show Log</a></li>
+													<li>
+													</li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+													<li><a href="index.php">Missing HTTPOnly Attribute</a></li>
+													<li><a href="index.php?page=set-background-color.php">Set Background
+															Color</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 944;">
+												<a href="">Via HTTP Headers<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=browser-info.php">Browser Info</a></li>
+													<li><a href="index.php?page=show-log.htm">Show Log</a></li>
+													<li>
+													</li>
+													<li><a href="index.php?page=site-footer-xss-discussion.php">Site
+															Footer</a></li>
+													<li>
+													</li>
+													<li><a href="index.php?page=back-button-discussion.php">Those "Back"
+															Buttons</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 943;">
+												<a href="">Via HTTP Attribute<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 942;">
+												<a href="">Via Misconfiguration<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php">Missing HTTPOnly Attribute</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 941;">
+												<a href="">Against HTML5 Web Storage<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 940;">
+												<a href="">Against JSON<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 939;">
+												<a href="">Via Cookie Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 938;">
+												<a href="">Via XML Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 937;">
+												<a href="">Via XPath Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 936;">
+												<a href="">Via Path Relative Style Sheet Injection<img
+														src="./../src/images/right.gif" class="rightarrowclass"
+														style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a
+															href="index.php?page=styling-frame.php&amp;page-to-frame=styling.php%3Fpage-title%3DStyling+with+Mutillidae">Styling
+															with Mutilidae</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 935;">
+												<a href="">BeeF Framework Targets<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="index.php?page=add-to-your-blog.php">Add to your
+															blog</a></li>
+													<li><a href="index.php?page=view-someones-blog.php">View someone's
+															blog</a></li>
+													<li><a href="index.php?page=show-log.htm">Show Log</a></li>
+													<li>
+													</li>
+													<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+													<li><a href="index.php?page=echo.php">Echo Message</a></li>
+													<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+													<li><a href="index.php?page=content-security-policy.php">Echo
+															Message (CSP)</a></li>
+													<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+															Lookup</a></li>
+													<li><a href="index.php?page=text-file-viewer.php">Text File
+															Viewer</a></li>
+													<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+													<li><a href="index.php?page=set-background-color.php">Set Background
+															Color</a></li>
+													<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a>
+													</li>
+													<li><a href="index.php?page=capture-data.php">Capture Data Page</a>
+													</li>
+													<li><a
+															href="index.php?page=document-viewer.php&amp;PathToDocument=documentation/how-to-access-Mutillidae-over-Virtual-Box-network.php">Document
+															Viewer</a></li>
+													<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary
+															File Inclusion</a></li>
+													<li><a href="index.php?page=xml-validator.php">XML Validator</a>
+													</li>
+													<li><a href="index.php?page=user-info-xpath.php">User Info
+															(XPath)</a></li>
+													<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+													<li><a href="index.php?page=register.php">Register User</a></li>
+													<li><a
+															href="index.php?page=password-generator.php&amp;username=anonymous">Password
+															Generator</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="">A8 - Insecure Deserialization</a>
+									</li>
+									<li style="z-index: 934;">
+										<a href="">A9 - Using Components with Known Vulnerabilities<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+											<li><a
+													href="index.php?page=view-user-privilege-level.php&amp;iv=6bc24fc1ab650b25b4114e93a98f1eba">CBC-bit
+													Flipping</a></li>
+											<li><a href="index.php?page=ssl-misconfiguration.php">SSL
+													Misconfiguration</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="">A10 - Insufficient Logging and Monitoring</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li style="z-index: 933;">
+								<a href="" style="padding-right: 23px;">OWASP 2013<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 932;">
+										<a href="">A8 - Cross Site Request Forgery (CSRF)<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=add-to-your-blog.php">Add to your blog</a></li>
+											<li><a href="index.php?page=register.php">Register User</a></li>
+											<li><a href="index.php?page=user-poll.php">Poll Question</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 931;">
+										<a href="">A10 - Unvalidated Redirects and Forwards<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="?page=credits.php">Credits</a></li>
+											<li><a href="">Setup/reset the DB (Disabled: Not Admin)</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li style="z-index: 930;">
+								<a href="" style="padding-right: 23px;">OWASP 2010<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 929;">
+										<a href="">A7 - Insecure Cryptographic Storage<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+											<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
+											<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
+											<li><a
+													href="index.php?page=view-user-privilege-level.php&amp;iv=6bc24fc1ab650b25b4114e93a98f1eba">View
+													User Privileges</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 928;">
+										<a href="">A8 - Failure to Restrict URL Access<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=edit-account-profile.php">Edit User Profile</a>
+											</li>
+											<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
+											<li><a href="index.php?page=secret-administrative-pages.php">"Secret"
+													Administrative Pages</a></li>
+											<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+											<li><a href="index.php?page=arbitrary-file-inclusion.php">Arbitrary File
+													Inclusion</a></li>
+											<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 927;">
+										<a href="">A9 - Insufficient Transport Layer Protection<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=ssl-misconfiguration.php">SSL
+													Misconfiguration</a></li>
+											<li><a href="index.php?page=login.php">Login</a></li>
+											<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+											<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li style="z-index: 926;">
+								<a href="" style="padding-right: 23px;">OWASP 2007<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 925;">
+										<a href="">A3 - Malicious File Execution<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=text-file-viewer.php">Text File Viewer</a></li>
+											<li><a href="index.php?page=source-viewer.php">Source Viewer</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 924;">
+										<a href="">A6 - Information Leakage<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=edit-account-profile.php">Edit User Profile</a>
+											</li>
+											<li><a href="index.php">Cache-Control</a></li>
+											<li><a href="index.php">X-Powered-By HTTP Header</a></li>
+											<li><a href="index.php?page=client-side-comments.php">HTML/JavaScript
+													Comments</a></li>
+											<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+											<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
+											<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
+											<li><a href="index.php?page=phpinfo.php">PHP Info Page</a></li>
+											<li><a href="index.php?page=robots-txt.php">Robots.txt</a></li>
+											<li><a href="index.php?page=ssl-misconfiguration.php">SSL
+													Misconfiguration</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 923;">
+										<a href="">A6 - Improper Error Handling<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+											<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
+											<li><a href="index.php?page=login.php">Login</a></li>
+											<li><a href="index.php?page=register.php">Register</a></li>
+											<li><a href="index.php?page=edit-account-profile.php">Edit User Profile</a>
+											</li>
+											<li><a href="index.php?page=pen-test-tool-lookup.php">Pen Test Tool
+													Lookup</a></li>
+											<li><a href="index.php?page=pen-test-tool-lookup-ajax.php">Pen Test Tool
+													Lookup (AJAX)</a></li>
+											<li><a href="./webservices/soap/ws-user-account.php">Lookup User (SOAP Web
+													Service)</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul>
+							<li style="z-index: 922;">
+								<a href="" style="padding-right: 23px;">Web Services<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 921;">
+										<a href="">SOAP<img src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 920;">
+												<a href="">Test Page<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/soap/ws-hello-world.php">Hello World</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 919;">
+												<a href="">Command Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/soap/ws-lookup-dns-record.php">DNS
+															Lookup</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 918;">
+												<a href="">SQL Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/soap/ws-user-account.php">Lookup User</a>
+													</li>
+												</ul>
+											</li>
+											<li style="z-index: 917;">
+												<a href="">Username Enumeration<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/soap/ws-user-account.php">Lookup User</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 916;">
+										<a href="">REST<img src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li style="z-index: 915;">
+												<a href="">SQL Injection<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/rest/ws-user-account.php">User Account
+															Management</a></li>
+												</ul>
+											</li>
+											<li style="z-index: 914;">
+												<a href="">Username Enumeration<img src="./../src/images/right.gif"
+														class="rightarrowclass" style="border:0;"></a>
+												<ul
+													style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+													<li><a href="./webservices/rest/ws-user-account.php">User Account
+															Management</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li style="z-index: 913;">
+								<a href="" style="padding-right: 23px;">Others<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 912;">
+										<a href="">Cross-origin Resource Sharing (CORS)<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 911;">
+										<a href="">Client-side "Security" Controls<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=client-side-control-challenge.php">Client-side
+													Control Challenge</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 910;">
+										<a href="">Cross-Site Framing<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=framing.php">Click-Jacking</a></li>
+											<li><a href="framer.html">Cross-Site Framing (Third-Party Framing)</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 909;">
+										<a href="">Tab-Nabbing<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=nice-tabby-cat.php">Tabby Cat</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 908;">
+										<a href="">Unrestricted File Upload<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=upload-file.php">File Upload</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 907;">
+										<a href="">Denial of Service<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="?page=text-file-viewer.php">Text File Viewer</a></li>
+											<li><a href="?page=show-log.htm">Show Web Log</a></li>
+											<li>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 906;">
+										<a href="">JavaScript Validation Bypass<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=login.php">Login</a></li>
+											<li><a href="index.php?page=user-info.php">User Info (SQL)</a></li>
+											<li><a href="index.php?page=user-info-xpath.php">User Info (XPath)</a></li>
+											<li><a href="index.php?page=add-to-your-blog.php">Add to your blog</a></li>
+											<li><a href="index.php?page=html5-storage.php">HTML5 Web Storage</a></li>
+											<li><a href="index.php?page=dns-lookup.php">DNS Lookup</a></li>
+											<li><a href="index.php?page=echo.php">Echo Message</a></li>
+											<li><a href="index.php?page=cors.php">Echo Message (CORS)</a></li>
+											<li><a href="index.php?page=content-security-policy.php">Echo Message
+													(CSP)</a></li>
+											<li><a href="index.php?page=repeater.php">Repeater</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="index.php?page=user-agent-impersonation.php">User-Agent
+											Impersonation</a>
+									</li>
+									<li style="z-index: 905;">
+										<a href="">Data Capture Pages<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=capture-data.php">Data Capture</a></li>
+											<li><a href="index.php?page=captured-data.php">View Captured Data</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 904;">
+										<a href="">JSON Web Token (JWT)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=jwt.php">Current User Information</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li style="z-index: 903;">
+								<a href="" style="padding-right: 23px;">Labs<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li style="z-index: 902;">
+										<a href="">How the Web Works<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-1.php">Lab 1 - Sending HTTP Requests
+													with Netcat</a></li>
+											<li><a href="index.php?page=labs/lab-2.php">Lab 2 - Capturing HTTP Packets
+													with Wireshark</a></li>
+											<li><a href="index.php?page=labs/lab-3.php">Lab 3 - Intercepting HTTP
+													Requests and Responses</a></li>
+											<li><a href="index.php?page=labs/lab-4.php">Lab 4 - Using Burp-Suite Proxy
+													History</a></li>
+											<li><a href="index.php?page=labs/lab-5.php">Lab 5 - Bypassing Client-side
+													Security</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 901;">
+										<a href="">SQL Injection<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-6.php">Lab 6 - Testing for SQL
+													Errors</a></li>
+											<li><a href="index.php?page=labs/lab-7.php">Lab 7 - Using SQLi to Bypass
+													Authentication</a></li>
+											<li><a href="index.php?page=labs/lab-8.php">Lab 8 - Extracting data</a></li>
+											<li><a href="index.php?page=labs/lab-9.php">Lab 9 - Finding Number of
+													Columns</a></li>
+											<li><a href="index.php?page=labs/lab-10.php">Lab 10 - Pivoting with SQL
+													injection</a></li>
+											<li><a href="index.php?page=labs/lab-11.php">Lab 11 - SQLMap</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 900;">
+										<a href="">Command Injection<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-12.php">Lab 12 - Extracting User
+													Accounts with Command Injection</a></li>
+											<li><a href="index.php?page=labs/lab-13.php">Lab 13 - Testing for Reverse
+													Connection</a></li>
+											<li><a href="index.php?page=labs/lab-14.php">Lab 14 - Reverse Bash Shell
+													with Command Injection</a></li>
+											<li><a href="index.php?page=labs/lab-15.php">Lab 15 - Reverse Meterpreter
+													Shell with Command Injection</a></li>
+											<li><a href="index.php?page=labs/lab-16.php">Lab 16 - Web Shell with Command
+													injection</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 899;">
+										<a href="">Lightweight Directory Access Protocol (LDAP) Injection<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-17.php">Lab 17 - Extract User Accounts
+													with LDAP Injection</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 898;">
+										<a href="">Insecure Direct Object Referece (IDOR)<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-18.php">Lab 18 - Edit Another User's
+													Profile</a></li>
+											<li><a href="index.php?page=labs/lab-19.php">Lab 19 - Extracting User
+													Accounts with IDOR</a></li>
+											<li><a href="index.php?page=labs/lab-20.php">Lab 20 - Extracting User
+													Accounts with Local File Inclusion</a></li>
+											<li><a href="index.php?page=labs/lab-21.php">Lab 21 - Web Shell with Local
+													File Inclusion (LFI)</a></li>
+											<li><a href="index.php?page=labs/lab-22.php">Lab 22 - Web Shell with Remote
+													File Inclusion (RFI)</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 897;">
+										<a href="">Open Redirect<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-23.php">Lab 23 - Open Redirects - Part
+													1</a></li>
+											<li><a href="index.php?page=labs/lab-24.php">Lab 24 - Open Redirects - Part
+													2</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 896;">
+										<a href="">Cross-site Scripting (XSS)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-25.php">Lab 25 - Creating a Cross-site
+													Script Proof of Concept (PoC)</a></li>
+											<li><a href="index.php?page=labs/lab-26.php">Lab 26 - Browser Exploitation
+													Framework (BeEF)</a></li>
+											<li><a href="index.php?page=labs/lab-27.php">Lab 27 - Bypassing Client-side
+													Defenses</a></li>
+											<li><a href="index.php?page=labs/lab-28.php">Lab 28 - Defending Against
+													Cross-site Scripting</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 895;">
+										<a href="">Cross-site Request Forgery (CSRF)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-29.php">Lab 29 - Voting for NMap</a>
+											</li>
+											<li><a href="index.php?page=labs/lab-30.php">Lab 30 - Adding a Blog</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 894;">
+										<a href="">HTML5 Web Storage<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-31.php">Lab 31 - Capturing HTML 5 Web
+													Storage</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 893;">
+										<a href="">Session Management<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-32.php">Lab 32 - Capture Session with
+													XSS</a></li>
+											<li><a href="index.php?page=labs/lab-33.php">Lab 33 - Intercepting Session
+													Token using Network Sniffer</a></li>
+											<li><a href="index.php?page=labs/lab-34.php">Lab 34 - Exfiltrating Data with
+													XSS</a></li>
+											<li><a href="index.php?page=labs/lab-35.php">Lab 35 - Capture Session with
+													XSS</a></li>
+											<li><a href="index.php?page=labs/lab-36.php">Lab 36 - Using a captured
+													session token</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 892;">
+										<a href="">Cookie Management<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-37.php">Lab 37 - Show Hints</a></li>
+											<li><a href="index.php?page=labs/lab-38.php">Lab 38 - Privilege
+													Escalation</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 891;">
+										<a href="">Password Management<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-39.php">Lab 39 - Password Cracking</a>
+											</li>
+											<li><a href="index.php?page=labs/lab-40.php">Lab 40 - Intercepting
+													Clear-Text Credentials</a></li>
+											<li><a href="index.php?page=labs/lab-41.php">Lab 41 - Hydra</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 890;">
+										<a href="">Input Validation<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-42.php">Lab 42 - Input Validation</a>
+											</li>
+											<li><a href="index.php?page=labs/lab-43.php">Lab 43 - File
+													Identification</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 889;">
+										<a href="">Error Handling<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-44.php">Lab 44 - Grabbing Server
+													Banners</a></li>
+											<li><a href="index.php?page=labs/lab-45.php">Lab 45 - Creating Injection
+													Files</a></li>
+											<li><a href="index.php?page=labs/lab-46.php">Lab 46 - Scanning with
+													Nikto</a></li>
+											<li><a href="index.php?page=labs/lab-47.php">Lab 47 - Testing for Errors</a>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 888;">
+										<a href="">Logging<img src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-48.php">Lab 48 - Log Poisoning</a></li>
+											<li><a href="index.php?page=labs/lab-49.php">Lab 49 - Log Disclosure</a>
+											</li>
+										</ul>
+									</li>
+									<li style="z-index: 887;">
+										<a href="">Server Configuration<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-50.php">Lab 50 - Testing HTTP Response
+													Headers</a></li>
+											<li><a href="index.php?page=labs/lab-51.php">Lab 51 - Scanning with
+													Nikto</a></li>
+											<li><a href="index.php?page=labs/lab-52.php">Lab 52 - Scanning with
+													SSLScan</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 886;">
+										<a href="">Content Security Policy (CSP)<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-53.php">Lab 53 - Testing HTTP Response
+													Headers</a></li>
+											<li><a href="index.php?page=labs/lab-54.php">Lab 54 - Scanning with
+													SSLScan</a></li>
+											<li><a href="index.php?page=labs/lab-55.php">Lab 55 - Testing Content
+													Security Policy (CSP)</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 885;">
+										<a href="">JSON Web Token (JWT) Security<img src="./../src/images/right.gif"
+												class="rightarrowclass" style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-56.php">Lab 56 - Session Timeout</a>
+											</li>
+											<li><a href="index.php?page=labs/lab-57.php">Lab 57 - Missing Signature
+													Validation</a></li>
+											<li><a href="index.php?page=labs/lab-58.php">Lab 58 - Cracking Signature
+													Password</a></li>
+											<li><a href="index.php?page=labs/lab-59.php">Lab 59 - SQL Injection via
+													JWT</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 884;">
+										<a href="">Cross-origin Resource Sharing (CORS)<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-60.php">Lab 60 - Access Control Allow
+													Origin Header</a></li>
+											<li><a href="index.php?page=labs/lab-61.php">Lab 61 - Pre-Flight
+													Requests</a></li>
+										</ul>
+									</li>
+									<li style="z-index: 883;">
+										<a href="">Software Composition Analysis (SCA)<img
+												src="./../src/images/right.gif" class="rightarrowclass"
+												style="border:0;"></a>
+										<ul
+											style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+											<li><a href="index.php?page=labs/lab-62.php">Lab 62 - Retire.js</a></li>
+											<li><a href="index.php?page=labs/lab-63.php">Lab 63 - OWASP Depenency
+													Check</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li style="z-index: 882;">
+								<a href="" style="padding-right: 23px;">Documentation<img
+										src="./../src/images/right.gif" class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li><a href="index.php?page=documentation/installation.php">Installation
+											Instructions (Linux)</a></li>
+									<li><a href="documentation/mutillidae-installation-on-xampp-win7.pdf"
+											target="_blank">Installation Instructions (Windows)</a></li>
+									<li><a href="index.php?page=documentation/usage-instructions.php">Usage
+											Instructions</a></li>
+									<li><a href="index.php?page=documentation/vulnerabilities.html">Listing of
+											Vulnerabilities</a></li>
+									<li><a href="index.php?page=credits.php">Credits</a></li>
+									<li>
+										<a href="https://www.sans.org/reading-room/whitepapers/application/introduction-owasp-mutillidae-ii-web-pen-test-training-environment-34380"
+											target="_blank">
+											Whitepaper: Introduction to the Mutillidae Web Pen Test Training Environment
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li style="z-index: 881;">
+								<a href="" style="padding-right: 23px;">Resources<img src="./../src/images/right.gif"
+										class="rightarrowclass" style="border:0;"></a>
+								<ul
+									style="display: none; top: 0px; box-shadow: rgb(170, 170, 170) 5px 5px 5px; visibility: visible;">
+									<li>
+										<a href="https://github.com/webpwnized/mutillidae" target="_blank">
+											Latest Version of OWASP Mutillidae II
+										</a>
+									</li>
+									<li>
+										<a href="https://www.owasp.org/index.php/Top_Ten" target="_blank">
+											OWASP Top Ten
+										</a>
+									</li>
+									<li>
+										<a href="https://addons.mozilla.org/en-US/firefox/collections/jdruin/pro-web-developer-qa-pack/"
+											target="_blank">
+											Web Penetration Testing Add-Ons
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div>&nbsp;</div>
+					<div>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="45R3YEXENU97S">
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+								name="submit" alt="Donate Today!">
+							<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</form>
+						Want to Help?
+					</div>
+					<div>&nbsp;</div>
+					<div>
+						<a href="http://www.youtube.com/user/webpwnized" target="_blank">
+							<img alt="Webpwnized YouTube Channel" src="./../src/images/youtube-play-icon-40-40.png">
+							<br>
+							Video Tutorials
+						</a>
+					</div>
+					<div>&nbsp;</div>
+					<div>
+						<a href="https://twitter.com/webpwnized" target="_blank">
+							<img alt="Webpwnized Twitter Channel" src="./../src/images/twitter-bird-48-48.png">
+							<br>
+							Announcements
+						</a>
+					</div>
+					<div>&nbsp;</div>
+					<div>
+						<a href="https://www.sans.org/reading-room/whitepapers/application/introduction-owasp-mutillidae-ii-web-pen-test-training-environment-34380"
+							target="_blank"
+							title="Whitepaper: Introduction to OWASP Mutillidae II Web Pen Test Training Environment">
+							<img alt="Webpwnized Twitter Channel" src="./../src/images/pdf-icon-48-48.png"
+								align="middle">
+							<br>
+							Getting Started
+						</a>
+					</div>
+					<div>&nbsp;</div>
+				</td>
+				<td class="main-table-frame-right">
+					<!-- Begin Content -->
+					<div class="page-title">Listing of Vulnerabilities</div>
+
+
+					<div style="margin: 5px;">
+						<span style="font-weight: bold; margin-right: 50px;">
+							<a id="back-button-anchor">
+								<img src="./../src/images/back-button-64-64.png" alt="Go Back" align="middle">
+								&nbsp;
+								Back
+							</a>
+						</span>
+						<span style="white-space: nowrap; font-weight: bold;"
+							title="Click here to see the primary goal of this page. (Additional vulnerabilities will exist on a page)">
+							<a href="./includes/pop-up-help-context-generator.php?pagename=./documentation/vulnerabilities.html"
+								class="colorbox cboxElement"
+								title="Help me with page ./documentation/vulnerabilities.html" style="color: #000000;">
+								<img alt="Help Me!" src="./../src/images/help-easy-button-48-48.png" align="middle">
+								Help Me!
+							</a>
+						</span>
+					</div>
+					<script nonce="">
+						document.addEventListener('DOMContentLoaded', function () {
+							document.getElementById('back-button-anchor').addEventListener('click',
+								function () {
+									document.location.href = 'http://127.0.0.1/mutillidae-master/index.php?page=home.php&popUpNotificationCode=SUD1';
+								});
+						});
+					</script>
+					<table style="width: 800px;">
+						<tbody>
+							<tr>
+								<td>
+									<ul>
+										<li>Application Exception</li>
+										<li>Application log injection</li>
+										<li>Application path disclosure</li>
+										<li>Authentication Bypass via SQL injection</li>
+										<li>Brute force secret admin pages</li>
+										<li>Buffer overflow</li>
+										<li>Cascading style sheet injection</li>
+										<li>CBC bit flipping (latest)</li>
+										<li>Click-jacking</li>
+										<li>Client-side Security</li>
+										<li>Comments with sensitive data</li>
+										<li>Content type is not specified</li>
+										<li>Cookie scoped to parent domain</li>
+										<li>Credit card numbers disclosed</li>
+										<li>Cross Site Request Forgery</li>
+										<li>Denial of Service</li>
+										<li>Directory Browsing</li>
+										<li>DOM injection</li>
+										<li>Forms caching</li>
+										<li>Frame source injection</li>
+										<li>HTML injection</li>
+										<li>HTTP Parameter Pollution</li>
+										<li>Information disclosure via HTML comments</li>
+										<li>Insecure Cookies</li>
+										<li>JavaScript Injection</li>
+										<li>JavaScript validation bypass</li>
+										<li>JSON injection</li>
+										<li>LDAP injection</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Loading of any arbitrary file</li>
+										<li>Local File Inclusion</li>
+										<li>Log injection</li>
+										<li>Method Tampering</li>
+										<li>O/S Command injection</li>
+										<li>Parameter addition</li>
+										<li>Password field submitted using GET method</li>
+										<li>Path Relative Style Sheet Injection</li>
+										<li>PHP server configuration disclosure</li>
+										<li>Phishing</li>
+										<li>Platform path disclosure</li>
+										<li>Privilege Escalation via Cookie Injection</li>
+										<li>Reflected Cross Site Scripting via GET, POST, Cookies, and HTTP Headers</li>
+										<li>Remote File Inclusion</li>
+										<li>robots.txt information disclosure</li>
+										<li>Stored Cross Site Scripting</li>
+										<li>SSL Stripping</li>
+										<li>SQL Injection</li>
+										<li>XML Entity Expansion</li>
+										<li>XML Injection</li>
+										<li>XML External Entity Injection</li>
+										<li>XPath Injection</li>
+										<li>Unencrypted database credentials</li>
+										<li>Unrestricted File Upload</li>
+										<li>Username enumeration</li>
+										<li>Un-validated Redirects and Forwards</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<span class="error-message">Note: Pages marked with a <span class="big-asterik">*</span> are common.
+						This means their vulnerabilities will appear on most pages.</span>
+
+					<p class="label">add-to-your-blog.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>SQL Injection on blog entry</li>
+							<li>SQL Injection on logged in user name</li>
+							<li>Cross site scripting on blog entry</li>
+							<li>Cross site scripting on logged in user name</li>
+							<li>Log injection on logged in user name</li>
+							<li>Cross site request forgery</li>
+							<li>JavaScript validation bypass</li>
+							<li>XSS in the form title via logged in username</li>
+							<li>HTML injection in blog input field</li>
+							<li>Application Exception Output</li>
+							<li>Application Log Injection</li>
+							<li>Known Vulnerable Output: Name, Comment, "Add blog for" title</li>
+						</ul>
+					</div>
+
+					<p class="label">arbitrary-file-inclusion.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>System file compromise</li>
+							<li>Load any page from any site</li>
+							<li>Reflected XSS via the value in the "page" URL parameter</li>
+							<li>Server-side includes</li>
+							<li>HTML injection</li>
+							<li>Remote File Inclusion</li>
+							<li>Local File Inclusion</li>
+							<li>Method Tampering</li>
+						</ul>
+					</div>
+
+					<p class="label">authorization-required.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+							<li>This page is only used in secure mode. In insecure mode, the site does not authorize
+								user.</li>
+						</ul>
+					</div>
+
+					<p class="label">back-button-discussion.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Reflected XSS via referer HTTP header</li>
+							<li>JS Injection via referer HTTP header</li>
+							<li>HTML injection via referer HTTP header</li>
+							<li>Unvalidated redirect</li>
+						</ul>
+					</div>
+
+					<p class="label">browser-info.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Reflected XSS via referer HTTP header</li>
+							<li>JS Injection via referer HTTP header</li>
+							<li>HTML injection</li>
+							<li>Reflected XSS via user-agent string HTTP header</li>
+						</ul>
+					</div>
+
+					<p class="label">capture-data.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>XSS via any GET, POST, or Cookie</li>
+							<li>Insert based SQL injection via any GET, POST, or Cookie</li>
+							<li>HTML injection</li>
+							<li>Application Log Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">captured-data.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								Stored XSS via any GET, POST, or Cookie sent to the capture
+								data page. (capture-data.php page writes values captured to a table
+								read by this page; captured-data.php (with a "d"))
+							</li>
+							<li>
+								HTML injection via any GET, POST, or Cookie sent to the capture
+								data page
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">client-side-comments.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								Comments with sensitive data
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">client-side-control-challenge.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								Reflected cross-site scripting
+							</li>
+							<li>
+								HTML injection
+							</li>
+							<li>Method tampering</li>
+							<li>Client-side control bypass</li>
+						</ul>
+					</div>
+
+					<p class="label">conference-room-lookup.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>LDAP injection</li>
+							<li>Method tampering</li>
+						</ul>
+					</div>
+
+					<p class="label">config.inc<span class="big-asterik">*</span></p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Contains unencrytped database credentials</li>
+							<li>
+								NOTE: This page is a canary; a target. It is not used
+								in the project. The credentials are only the default. If the
+								project was set up differently the credentials may not be correct
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">credits.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Unvalidated Redirects and Forwards</li>
+						</ul>
+					</div>
+
+					<p class="label">database-offline.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Not that are known. Maybe we should add some.</li>
+						</ul>
+					</div>
+
+					<p class="label">directory-browsing.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Discusses Directory Browsing</li>
+						</ul>
+					</div>
+
+					<p class="label">dns-lookup.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Cross site scripting on the host/ip field</li>
+							<li>O/S Command injection on the host/ip field</li>
+							<li>This page writes to the log. SQLi and XSS on the log are possible</li>
+							<li>HTML injection</li>
+							<li>
+								GET for POST (method tampering) is possible because only reading
+								POSTed variables is not enforced.
+							</li>
+							<li>Application Log Injection</li>
+							<li>JavaScript Validation Bypass</li>
+						</ul>
+					</div>
+
+					<p class="label">document-viewer.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Cross Site Scripting</li>
+							<li>HTML injection</li>
+							<li>HTTP Parameter Pollution</li>
+							<li>Frame source injection</li>
+							<li>Method Tampering</li>
+							<li>Application Log Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">echo.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Cross site scripting on the message field</li>
+							<li>O/S Command injection on the message field</li>
+							<li>This page writes to the log. SQLi and XSS on the log are possible</li>
+							<li>HTML injection</li>
+							<li>
+								GET for POST (method tampering) is possible because only reading
+								POSTed variables is not enforced.
+							</li>
+							<li>Application Log Injection</li>
+							<li>JavaScript Validation Bypass</li>
+						</ul>
+					</div>
+
+					<p class="label">edit-account-profile.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Insecure Direct Object Reference (IDOR) via UID parameter</li>
+							<li>
+								SQL injection, HTML injection and XSS
+								via the username, signature and password field
+							</li>
+							<li>Method tampering</li>
+							<li>Application Log Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">footer.php<span class="big-asterik">*</span></p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Cross site scripting via the HTTP_USER_AGENT HTTP header.</li>
+						</ul>
+					</div>
+
+					<p class="label">framer.html</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Forms caching</li>
+							<li>Click-jacking</li>
+						</ul>
+					</div>
+
+					<p class="label">framing.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Click-jacking</li>
+						</ul>
+					</div>
+
+					<p class="label">header.php<span class="big-asterik">*</span></p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>XSS via logged in user name and signature</li>
+							<li>The hints the DB menu item can be enabled by setting the uid value of the cookie to 1
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">home.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+						</ul>
+					</div>
+
+					<p class="label">html5-storage.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								DOM injection on the add-key error message because the key entered is output
+								into the error message without being encoded.
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">index.php<span class="big-asterik">*</span></p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>You can XSS the hints-enabled output in the menu because it takes input from the
+								hints-enabled cookie value.</li>
+							<li>You can SQL injection the UID cookie value because it is used to do a lookup</li>
+							<li>You can change your rank to admin by altering the UID value</li>
+							<li>HTTP Response Splitting via the logged in user name because it is used to create an HTTP
+								Header</li>
+							<li>This page is responsible for cache-control but fails to do so</li>
+							<li>This page allows the X-Powered-By HTTP header</li>
+							<li>HTML comments</li>
+							<li>There are secret pages that if browsed to will redirect user to the phpinfo.php page.
+								This can be done via brute forcing
+							</li>
+							<li>The show-hints cookie can be changed by user to enable hints even though they are not
+								suppose to show in secure mode</li>
+						</ul>
+					</div>
+
+					<p class="label">installation.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+						</ul>
+					</div>
+
+					<p class="label">log-visit.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>SQL injection and XSS via referer HTTP header</li>
+							<li>SQL injection and XSS via user-agent string</li>
+						</ul>
+					</div>
+
+					<p class="label">login.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Authentication bypass SQL injection via the username field and password field</li>
+							<li>SQL injection via the username field and password field</li>
+							<li>XSS via username field</li>
+							<li>JavaScript validation bypass</li>
+							<li>HTML injection via username field</li>
+							<li>Username enumeration</li>
+							<li>Application Log Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">page-not-found.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+							<li>This page is only used in secure mode. In insecure mode, the site does not validate the
+								"page" parameter.</li>
+						</ul>
+					</div>
+
+					<p class="label">password-generator.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>JavaScript injection</li>
+						</ul>
+					</div>
+
+					<p class="label">pen-test-tool-lookup.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>JSON injection</li>
+						</ul>
+					</div>
+
+					<p class="label">pen-test-tool-lookup-ajax.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>JSON injection</li>
+						</ul>
+					</div>
+
+					<p class="label">php-errors.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+						</ul>
+					</div>
+
+					<p class="label">phpinfo.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>This page gives away the PHP server configuration</li>
+							<li>Application path disclosure</li>
+							<li>Platform path disclosure</li>
+							<li>Information disclosure</li>
+						</ul>
+					</div>
+
+					<p class="label">privilege-escalation.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>None</li>
+						</ul>
+					</div>
+
+					<p class="label">process-commands.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Creates cookies but does not make them HTML only</li>
+						</ul>
+					</div>
+
+					<p class="label">process-login-attempt.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Same as login.php. This is the action page.</li>
+						</ul>
+					</div>
+
+					<p class="label">redirectandlog.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Same as credits.php. This is the action page.</li>
+						</ul>
+					</div>
+
+					<p class="label">register.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								SQL injection, HTML injection and XSS
+								via the username, signature and password field
+							</li>
+							<li>Method tampering</li>
+							<li>Application Log Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">repeater.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>HTML injection and XSS</li>
+							<li>Method tampering</li>
+							<li>Parameter addition</li>
+							<li>Buffer overflow</li>
+						</ul>
+					</div>
+
+					<p class="label">rene-magritte.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Click-jacking</li>
+						</ul>
+					</div>
+
+					<p class="label">robots.txt</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Contains directories that are supposed to be private.</li>
+							<li>The directories are browsable and contain sensitive files.</li>
+						</ul>
+					</div>
+
+					<p class="label">robots.txt.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Discusses robots.txt</li>
+						</ul>
+					</div>
+
+					<p class="label">secret-administrative-pages.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>This page gives hints about how to discover the server configuration.</li>
+							<li>
+								There are secret pages that if browsed to will redirect user to the phpinfo.php page.
+								This can be done via brute forcing
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">set-background-color.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Cascading style sheet injection and XSS via the color field.</li>
+						</ul>
+					</div>
+
+					<p class="label">set-up-database.html</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add something.</li>
+						</ul>
+					</div>
+
+					<p class="label">show-log.html</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Denial of Service if you fill up the log</li>
+							<li>XSS via the hostname, client IP, browser HTTP header, Referer HTTP header, and date
+								fields.</li>
+							<li>HTML Injection</li>
+						</ul>
+					</div>
+
+					<p class="label">site-footer-xss-discusson.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>XSS and HTMLi via the user agent string HTTP header</li>
+						</ul>
+					</div>
+
+					<p class="label">source-viewer.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Loading of any arbitrary file including operating system files.</li>
+							<li>HTML Injection</li>
+							<li>Cross Site Scripting</li>
+							<li>Application log injection</li>
+						</ul>
+					</div>
+
+					<p class="label">sqlmap-targets.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>None</li>
+						</ul>
+					</div>
+
+					<p class="label">ssl-misconfiguration.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								Discusses TLS downgrade attack due to a vulnerability in the site globally.
+								No known vulnerabilities on the page itself.
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">styling.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Path Relative Style Sheet Injection</li>
+							<li>HTML Injection</li>
+							<li>Cross Site Scripting</li>
+						</ul>
+					</div>
+
+					<p class="label">text-file-viewer.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Loading of any arbitrary web page on the Interet or locally including the sites password
+								files.</li>
+							<li>Phishing</li>
+							<li>Method Tampering</li>
+							<li>Cross site scripting</li>
+							<li>Application log injection</li>
+						</ul>
+					</div>
+
+					<p class="label">upload-file.php<span class="big-asterik">*</span></p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Unrestricted File Upload</li>
+							<li>Cross Site Scripting</li>
+							<li>HTML injection</li>
+						</ul>
+					</div>
+
+					<p class="label">usage-instructions.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>No known vulnerabilities. We should add some.</li>
+						</ul>
+					</div>
+
+					<p class="label">user-agent-impersonation.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Javascript String Injection</li>
+							<li>Cross site scripting</li>
+							<li>User agent impersonation</li>
+						</ul>
+					</div>
+
+					<p class="label">user-info.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>SQL injection to dump all usernames and passwords via the username field or the password
+								field</li>
+							<li>XSS via any of the displayed fields. Inject the XSS on the register.php page.</li>
+							<li>XSS via the username field</li>
+							<li>JavaScript validation bypass</li>
+						</ul>
+					</div>
+
+					<p class="label">user-info-xpath.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>XPath injection to dump all usernames and passwords via the username field or the
+								password field</li>
+							<li>XSS via any of the displayed fields. Inject the XSS on the register.php page.</li>
+							<li>XSS via the username field</li>
+							<li>JavaScript validation bypass</li>
+						</ul>
+					</div>
+
+					<p class="label">user-poll.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>Parameter pollution</li>
+							<li>Method Tampering</li>
+							<li>XSS via the choice parameter</li>
+							<li>Cross site request forgery to force user choice</li>
+							<li>HTML injection</li>
+						</ul>
+					</div>
+
+					<p class="label">view-someones-blog.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>
+								Persistent XSS via any of the displayed fields.
+								They are input on the add to your blog page.
+							</li>
+						</ul>
+					</div>
+
+					<p class="label">view-user-privilege-level.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>CBC bit flipping attack</li>
+						</ul>
+					</div>
+
+					<p class="label">webservices/rest/ws-user-account.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>REST Web Service: SQL Injection</li>
+							<li>REST Web Service: Username emuneration</li>
+						</ul>
+					</div>
+
+					<p class="label">webservices/soap/ws-lookup-dns-record.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>SOAP Web Service: Command Injection</li>
+							<li>SOAP Web Service: Username emuneration</li>
+						</ul>
+					</div>
+
+					<p class="label">webservices/soap/ws-user-account.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>SOAP Web Service: SQL Injection</li>
+							<li>SOAP Web Service: Username emuneration</li>
+						</ul>
+					</div>
+
+					<p class="label">xml-validator.php</p>
+					<div style="padding-left: 40px;">
+						<ul>
+							<li>XML Entity Injection Attack</li>
+							<li>XML Entity Expansion</li>
+							<li>XML Injection</li>
+							<li>Reflected Cross site scripting via XML Injection</li>
+						</ul>
+					</div>
+
+					<!-- I think the database password is set to blank or perhaps samurai.
+			It depends on whether you installed this web app from irongeeks site or
+			are using it inside Kevin Johnsons Samurai web testing framework.
+			It is ok to put the password in HTML comments because no user will ever see
+			this comment. I remember that security instructor saying we should use the
+			framework comment symbols (ASP.NET, JAVA, PHP, Etc.)
+			rather than HTML comments, but we all know those
+			security instructors are just making all this up. -->
+					<!-- End Content -->
+				</td>
+			</tr>
+			<tr class="main-table-frame-dark">
+				<td colspan="2">
+					Browser: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:98.0) Gecko/20100101 Firefox/98.0 <br>
+					PHP Version: 8.1.4 </td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="cboxOverlay" style="display: none;"></div>
+	<div id="colorbox" class="" style="display: none; padding-bottom: 42px; padding-right: 42px;">
+		<div id="cboxWrapper">
+			<div>
+				<div id="cboxTopLeft" style="float: left;"></div>
+				<div id="cboxTopCenter" style="float: left;"></div>
+				<div id="cboxTopRight" style="float: left;"></div>
+			</div>
+			<div style="clear: left;">
+				<div id="cboxMiddleLeft" style="float: left;"></div>
+				<div id="cboxContent" style="float: left;">
+					<div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div>
+					<div id="cboxTitle" style="float: left;"></div>
+					<div id="cboxCurrent" style="float: left;"></div>
+					<div id="cboxNext" style="float: left;"></div>
+					<div id="cboxPrevious" style="float: left;"></div>
+					<div id="cboxSlideshow" style="float: left;"></div>
+					<div id="cboxClose" style="float: left;"></div>
+				</div>
+				<div id="cboxMiddleRight" style="float: left;"></div>
+			</div>
+			<div style="clear: left;">
+				<div id="cboxBottomLeft" style="float: left;"></div>
+				<div id="cboxBottomCenter" style="float: left;"></div>
+				<div id="cboxBottomRight" style="float: left;"></div>
+			</div>
+		</div>
+		<div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+	</div>
+</body>
+
+</html>
