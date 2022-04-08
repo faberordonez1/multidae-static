@@ -7,15 +7,15 @@ class menuCenter extends HTMLElement{
         let menuHome = `<a href='index.html'>Home</a>|
         <a href="pages/login.html">Login/Register</a>|
         <a href="pages/inlogin.html">Toggle Security</a>|
-        <a href="home.html">Enforce TLS</a>|
-        <a href="set-up-database.html">Reset DB</a>|
-        <a href="show-log.html">View Log</a>|
-        <a href="index.php?page=captured-data.php">View Captured Data</a>`;
+        <a href="index.html">Enforce TLS</a>|
+        <a href="pages/set-up-database.html">Reset DB</a>|
+        <a href="pages/show-log.html">View Log</a>|
+        <a href="pages/captured-data.html">View Captured Data</a>`;
 
         let menuOthers =  `<a href='../index.html'>Home</a>|
         <a href="login.html">Login/Register</a>|
         <a href="login.html">Toggle Security</a>|
-        <a href="home.html">Enforce TLS</a>|
+        <a href="../index.html">Enforce TLS</a>|
         <a href="set-up-database.html">Reset DB</a>|
         <a href="show-log.html">View Log</a>|
         <a href="captured-data.html">View Captured Data</a>`
